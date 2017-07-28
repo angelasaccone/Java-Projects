@@ -5,5 +5,5 @@ Here are some projects that I have written in the Java programming language.
 
   - Temperature Conversion Table
   - Circle with Circle Driver
-  - Retail with Retail Sample
-  - Cell Class with GameOfLife Unit Tests
+  - Retail with Retail Item Sample
+  - Cell Class with Game Of Life Unit Tests
