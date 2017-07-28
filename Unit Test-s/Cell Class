@@ -1,0 +1,18 @@
+//original class
+public class Cell {
+  public Cell() {
+    this.isAlive = false;
+  }
+  
+  public Cell(boolean isAlive) 
+  {
+    this.isAlive = isAlive;
+  }
+  
+  public Cell neighbor;
+  
+  private boolean isAlive;
+  
+  public boolean getIsAlive(){
+    return isAlive;
+  }  
