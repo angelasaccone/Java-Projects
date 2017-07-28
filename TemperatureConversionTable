@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TemperatureConversionTable {
+   public static void main(String [] args) {
+   
+     //Created  scan object here to read user input 
+      Scanner scan = new Scanner(System.in);
+      
+    //Header for Temperature, Celsius and Farenheit  
+      System.out.println("                Temperature (Degrees)");
+	   System.out.println("----------------------------------------------");
+		System.out.println("   Celsius " + "                  Fahrenheit");
+		
+         
+      //for loop to determine fahrenheit and display table data:
+      
+      for (int Celsius = 0; Celsius <= 20; Celsius++) {
+           double Farenheit = ((9.0/5)*Celsius+32);//added data type to run this formula 
+           System.out.println("\t " + Celsius + "\t " + Farenheit);
+           
+      }//end for loop
+      
+    }//end main
+}//end class    
