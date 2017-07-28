@@ -1,0 +1,47 @@
+public class RetailItem { //Service Class of RetailItem
+  
+   
+  //fields
+  private String description;
+  private int unitsOnHand;
+  private double retailPrice;
+  
+  /**
+    set methods to appropiate name
+   */
+  public void setDescription(String des) {
+     description = des;
+  }
+  
+  public void setUnitsOnHand(int unit) {
+      unitsOnHand = unit;
+  }
+  
+  public void setRetailPrice(double price) {
+    retailPrice = price;
+  }
+  
+  public String getDescription() {
+    return description;
+  }
+  
+  public int getUnitsOnHand() {
+     return unitsOnHand;
+  }
+  
+  public double getRetailPrice() {
+    return retailPrice;
+  }
+  
+  //will get and display the values of each item's attributes
+  public String toString() {
+    String str = "";
+    str += "\nthe item is: " + description;
+    str += "\nthe price is: " + retailPrice;
+    str += "\nitems in stock: " + unitsOnHand;
+    return str;
+  }//end toString()
+
+
+  
+ }//end class   
