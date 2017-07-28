@@ -1,0 +1,23 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class GameOfLife1Test {
+   @Test
+   public void TestIsAlive() {
+     Cell cell = new Cell();
+     assertEquals(true,cell.getIsAlive());
+   }
+   
+   @Test
+   public void TestWhenPassedIsCellAlive() {
+     Cell cell = new Cell(false);
+     assertEquals(false,cell.getIsAlive());
+   }
+   
+   @Test
+   public void TestIsNeighborAlive() {
+      Cell cell = new Cell();
+      Cell neighbor = new Cell();
+      cell.neighbor = neighbor;
+      assertEquals(true,cell.neighbor.getIsAlive());
+   }
