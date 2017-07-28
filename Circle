@@ -1,0 +1,52 @@
+public class Circle { 
+ 
+     //Fields of Circle class
+    private double radius;
+    private final double PI = 3.14159;
+    
+    //No-arg constructor that sets the radius field to 0.0
+    public Circle() {
+      radius = 0.0;
+    }
+    
+    //Constructor that accepts radius of the circle as an argument
+    public Circle(double rad) {
+       radius = rad;
+    }
+    
+    //Sets the radius of the circle
+    public void setRadius(double rad) {
+      radius = rad;
+    }
+    
+    //Gets the radius of the circle
+    public void getRadius() {
+       return radius;
+    }
+    
+    //Gets the area of the circle
+    public void getArea() {
+      return PI * radius * radius;
+    }
+    
+    //Gets the diameter of the circle
+    public void getDiameter() {
+      return radius * 2;
+    }
+    
+    //Gets the circumference of the circle
+    public void getCircumference() {
+      return 2 * PI * radius;
+    }
+    
+    //will get and display the values of each cirlce's attributes
+  public String toString() {
+    String str = "";
+    str += "\nthe circle's radius is: " + radius;
+    str += "\nthe circle's area is: " + area;
+    str += "\nthe circle's diameter is: " + diameter;
+    str += "\nthe circle's circumference is: " + circumference;
+    return str;
+  }//end toString()
+
+}//end class           
