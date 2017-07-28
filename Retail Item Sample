@@ -1,0 +1,67 @@
+import java.io.*;//used to reference a file to export data to it
+import java.text.DecimalFormat; //needed in order to format output
+import java.util.*; //read user input
+
+public class RetailItemSample {
+  public static void main (String [] args)throws FileNotFoundException {
+  
+    //Created scan object here to read user input
+    Scanner scan = new Scanner(System.in); 
+   
+    DecimalFormat formatter = new DecimalFormat("$#,0.00");
+    /*File infile = new File("data.txt");
+    infile.createNewFile(); //will create the data_in.txt
+    if file exists, it will not create the file otherwise
+    Note: this file created a blank text file
+    FileWriter writes output to infile blank text file
+    PrintWriter writer = new PrintWriter("data_in.txt");//sending file reference to  infile
+    System.out.println(infile.getAbsolutePath());*/
+    
+    
+    //Created jacket object here
+    RetailItem item1 = new RetailItem();
+    item1.setDescription("Jacket");
+    item1.setUnitsOnHand(12);
+    item1.setRetailPrice(59.95);
+    writer.println(item1.toString());
+    
+    //Created Designer Jeans object here
+    RetailItem item2 = new RetailItem();
+    item2.setDescription("Designer Jeans");
+    item2.setUnitsOnHand(40);
+    item2.setRetailPrice(34.95);
+    writer.println(item2.toString());
+    
+    //Created Shirts Object here
+    RetailItem item3 = new RetailItem();
+    item3.setDescription("Shirts");
+    item3.setUnitsOnHand(20);
+    item3.setRetailPrice(24.95);
+    writer.println(item3.toString());
+    
+    //Display info for Jacket Object
+    System.out.println("Jacket");
+    System.out.println("Description: " + item1.getDescription());
+    System.out.println("Units on hand: " + item1.getUnitsOnHand());
+    System.out.println("Price: " + item1.getRetailPrice());
+    
+    //Display info for Designer Jeans Object
+    System.out.println("Designer Jeans");
+    System.out.println("Description: " + item2.getDescription());
+    System.out.println("Units on hand: " + item2.getUnitsOnHand());
+    System.out.println("Price: " + item2.getRetailPrice());
+    
+    //Display infor for Shirts Object
+    System.out.println("Shirts");
+    System.out.println("Description: " + item3.getDescription());
+    System.out.println("Units on hand: " + item3.getUnitsOnHand());
+    System.out.println("Price: " + item3.getRetailPrice());
+    
+    writer.close();//closes before you can see the contents of the file.
+
+    
+  }//end main   
+ }//end class
+
+
+   
