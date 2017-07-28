@@ -1,0 +1,30 @@
+import java.io.*;//used to reference a file to export data to it
+import java.util.*; //read user input
+
+public class CircleDriver {
+  public static void main(String [] args) throws FileNotFoundException {
+    
+    //Created scan object here to read user input
+    Scanner scan = new Scanner(System.in); 
+   
+    //Created writer object to write to the data_in.txt file 
+    PrintWriter writer = new PrintWriter("Circle.txt");
+    
+    //Created Circle object here
+    Circle circle = new Circle();
+        
+    //Display info for the cirlce object
+    System.out.println("Circle");
+    System.out.println("Area: " + circle.getArea());
+    System.out.println("Diameter: " + circle.getDiameter());
+    System.out.println("Circumference: " + circle.getCircumference());
+
+  
+     writer.close();//closes before you can see the contents of the file.
+
+
+ 
+ }//end main
+
+}//end CircleDriver class 
+
